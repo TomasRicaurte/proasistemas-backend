@@ -1,0 +1,22 @@
+{
+  "name": "order-service",
+  "version": "1.0.0",
+  "description": "Servicio de recepcion de los pedidos",
+  "main": "index.js",
+  "scripts": {
+      "start": "node index.js",
+      "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Tomas Ricaurte",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.10.8",
+    "body-parser": "^2.2.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
