@@ -60,3 +60,7 @@ Para dar la solución adecuada a este planteamiento se ha creado 3 microservicio
     'Producto': 'producto del pedido',
     'cantidad': x
  }
+
+
+### Nota para los .env
+ Se debe de crear en cada proyecto un archivo .env y copiar el contenido que esta dentro de los .env.example para que se puedan realizar las pruebas de manera correcta.
