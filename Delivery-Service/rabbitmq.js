@@ -28,9 +28,9 @@ async function conectarRabbitMQ() {
             };
 
             if (resultado.disponible) {
-                console.log('El pedido fue despachado', ordenId );
+                console.log('El pedido fue despachado orden #', estado.ordenId );
             } else {
-                console.log('El pedido fue rechazado por falta de inventario existente', ordenId);
+                console.log('El pedido fue rechazado por falta de inventario existente orden #', estado.ordenId);
             }
             
             channel.sendToQueue(ORDER_STATUS_QUEUE, Buffer.from(JSON.stringify(estado)),{
